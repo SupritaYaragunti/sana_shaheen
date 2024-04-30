@@ -17,10 +17,11 @@
 
    @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
     * {
-      margin: 0;
-      padding: 0;
+    
       font-family: "Manrope", sans-serif;
+      /* box-sizing: border-box; */
       /* overflow-x: hidden; */
+      /* width: 100%; */
     }
 
     .navbar p{
@@ -128,7 +129,7 @@ color: rgb(223, 191, 10);
         transform: translateY(0);
       }
       50% {
-        transform: translateY(-70px); /* Adjust the value for desired movement */
+        transform: translateY(-20px); /* Adjust the value for desired movement */
       }
     }
 
@@ -315,13 +316,14 @@ footer {
     <div class="col-lg-6 line">
 <h5 class="fw-bolder fs-2 lh-base"  data-aos="fade-right"data-aos-duration="1500">Welcome To <span class="underlined">  Sana Shaheen </span> Group of Institutions</h5>
 <p class="mt-4 fw-normal lh-lg fs-6 " data-aos="fade-right"data-aos-duration="2500">Sana Shaheen Independent PU College in association with the renowned Shaheen Institutions, Bidar and approved by the Government of Karnataka had its beginning in the Academic Year 2021- 22. The curriculum is strengthened and supplemented with coaching for Competitive Exams "JEE MAINS/NEET/PCET/CET" for Science combination, "CA/CS Foundation" and "Tally" for Commerce Combination.</p>
-<button type="button" class="btn btn-warning mt-4" data-aos="fade-right"data-aos-duration="3500"
-><i class="bi bi-mortarboard-fill p-2"></i> Explore Courses</button>  
+<a href="accademic_prgm.html">
+<button  type="button" class="btn btn-warning mt-4" data-aos="fade-right"data-aos-duration="3500"><i class="bi bi-mortarboard-fill p-2"></i> Explore Courses</button> 
+</a> 
 </div>
     <div class="col-lg-6 mt-5 mediengg">
 <img src="./images/home-4.png" class="img-fluid animate_heartBeat" alt="">
 <div class="text-center">
-  <a href="./images/finelhos 1.png" download class="download-btn"><i class="bi bi-download"></i> Download</a>
+  <a href="./fils/Brochure.pdf 1.png" download class="download-btn"><i class="bi bi-download"></i> Download</a>
 </div>
     </div>
   </div>
@@ -393,25 +395,27 @@ footer {
                   </a>
                 </p>
                 <p>
-                  <i class="bi bi-chevron-compact-left"></i><a href="#"> PUC
+                  <i class="bi bi-chevron-compact-left"></i><a href="about.html"> About
                   </a>
                 </p>
                 <p>
-                  <i class="bi bi-chevron-compact-left"></i><a href="#"> Gallery
+                  <i class="bi bi-chevron-compact-left"></i><a href="accademic_prgm.html"> Academic Programs
                   </a>
                 </p>
               </div>
               <div class="col-lg-4">
                 <p>
-                  <i class="bi bi-chevron-compact-left"></i><a href="about.html"> About us
+                  <i class="bi bi-chevron-compact-left"></i><a href="campus.html"> 
+                    Campus
                   </a>
                 </p>
                 <p>
-                  <i class="bi bi-chevron-compact-left"></i><a href="#"> Admition Enquiry
+                  <i class="bi bi-chevron-compact-left"></i><a href="hostel.html"> Hostel
+
                   </a>
                 </p>
                 <p>
-                  <i class="bi bi-chevron-compact-left"></i><a href="#"> Contact Us
+                  <i class="bi bi-chevron-compact-left"></i><a href="achivements.html">Achievements
                   </a>
                 </p>
               </div>
@@ -467,9 +471,9 @@ footer {
     function displaySection(section) {
       var infoText = document.getElementById('infoText');
       var sections = {
-        mission: "To provide affordable quality education, by equipping students with knowledge and skills in their chosen stream, inculcate values, identify hidden talents, provide opportunities to realize their full potential and thus shape them into future professionals, entrepreneurs and above all good human beings",
-        vision: "Our vision statement goes here.",
-        values: "Our values statement goes here."
+        mission: "To strive for quality education in keeping with the motto of the college, “Excellence in Education” and prepare young minds for imbibing knowledge, skills and sensitivity.",
+        vision: "To provide affordable quality education, while equipping students with knowledge and skills in their chosen stream, inculcate values, identify hidden talents, provide opportunities for students to realize their full potential and thus shape them into future professional, entrepreneurs and above all good human beings.",
+        values: "Values specially moral values play an essential role in any stundent's life.  They help build a positive character with traits such as compassion, respect, kindness, and humility.  Values also help in shaping student’s attitudes and beliefs towards various aspects of life and provide them with a unique perspective."
       };
   
       // Highlight clicked section and update information text
