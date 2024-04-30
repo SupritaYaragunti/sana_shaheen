@@ -76,53 +76,74 @@
 }
 
 footer {
-      background-color: #0b0b49;    }
-    .headings{
-      margin-left: 55px;
+      background-color: #0b0b49;
     }
-    .linkss h5, .infoo h5{
+
+    /* .headings{
+      margin-left: 55px;
+    } */
+    .linkss h5,
+    .infoo h5 {
       font-weight: 500;
       font-size: 18px;
       line-height: 24px;
     }
-
-    #quick-links ul li a{
+    /* footer */
+    #quick-links p a {
       text-decoration: none;
       color: white;
       font-weight: 400;
       font-size: 15px;
       line-height: 20px;
     }
-    #quick-links ul li{
-      list-style: none;
-      margin: 15px;
+
+    #quick-links p a:hover {
+      text-decoration: underline rgb(219, 180, 6);
     }
-    #quick-links ul li i{
+
+    #quick-links p i {
       font-size: 1rem;
       color: rgb(223, 191, 10);
     }
-    #quick-links ul li i{
-      margin: 10px;
+
+    .line-height p {
+      line-height: 35px;
+
     }
-    #information ul li i{
-      margin-right: 10px;
+
+    .heghtline span {
+      line-height: 30px;
     }
-    #information ul li{
-list-style: none;  
-  }
-  #information ul li a{
-    text-decoration: none;
-    color: white;
-    font-weight: 400;
-      font-size: 15px;
-      line-height: 20px;
-  }
-  #information ul li{
-    margin: 15px;
-}
-#information ul li i{
-color: rgb(223, 191, 10);
-}
+    .mail p{
+      margin-left: 5px;
+      margin-top: 2px;
+    }
+
+    .info {
+      position: relative;
+    }
+
+    .info li {
+      display: grid;
+      grid-template-columns: 10px 1fr;
+      margin-bottom: 16px;
+    }
+
+    .info li span:nth-child(1) {
+      color: #e6b20a;
+      font-size: 19px;
+      margin-left: -18px;
+      margin-top: 3px;
+    }
+
+    .info li span {
+      color: #fff;
+    }
+
+    .info a {
+      color: white;
+      text-decoration: none;
+    }
   </style>
 
 </head>
@@ -134,7 +155,7 @@ color: rgb(223, 191, 10);
 
     <nav class="navbar bg-dark">
       <div class="container-fluid">
-        <span class="navbar-brand mb-0 h1 mx-auto text-white">Sana Shaheen Group of Institutions , Hubli </span>
+        <span class=" mx-auto text-white ">Sana Shaheen Group of Institutions , Hubli </span>
       </div>
     </nav>
     <!-- Top Header /- -->
@@ -245,37 +266,59 @@ color: rgb(223, 191, 10);
         <div class="col-lg-6">
           <div class="linkss">
             <h5 class="headings mt-5 text-white">Quick Links</h5>
-            <div class="row" id="quick-links">
-              <div class="col-lg-5">
-                <ul><li>
-                <i class="bi bi-chevron-compact-left"></i><a href="index.html"> Home
+            <div class="row mt-3" id="quick-links">
+              <div class="col-lg-4">
+                <p>
+                  <i class="bi bi-chevron-compact-left"></i><a href="index.html"> Home
                   </a>
-              </li>
-              <li><i class="bi bi-chevron-compact-left"></i> <a href="#">PUC</a></li>
-              <li><i class="bi bi-chevron-compact-left"></i><a href="#">Gallery</a></li>
-              </ul>
+                </p>
+                <p>
+                  <i class="bi bi-chevron-compact-left"></i><a href="#"> PUC
+                  </a>
+                </p>
+                <p>
+                  <i class="bi bi-chevron-compact-left"></i><a href="#"> Gallery
+                  </a>
+                </p>
               </div>
-              <div class="col-lg-6">
-               <ul><li><i class="bi bi-chevron-compact-left"></i><a href="about.html"> About us</a></li>
-              <li><i class="bi bi-chevron-compact-left"></i><a href="#">Admition Enquiry</a></li>
-              <li><i class="bi bi-chevron-compact-left"></i> <a href="#">Contact Us</a></li>
-              </ul>
+              <div class="col-lg-4">
+                <p>
+                  <i class="bi bi-chevron-compact-left"></i><a href="about.html"> About us
+                  </a>
+                </p>
+                <p>
+                  <i class="bi bi-chevron-compact-left"></i><a href="#"> Admition Enquiry
+                  </a>
+                </p>
+                <p>
+                  <i class="bi bi-chevron-compact-left"></i><a href="#"> Contact Us
+                  </a>
+                </p>
               </div>
+              
             </div>
           </div>
         </div>
         <div class="col-lg-6">
           <div class="infoo">
             <h5 class="mt-5 text-white">Contact Information</h5>
-            <div class="row" id="information">
-            <ul>
-              <li><i class="bi bi-send-arrow-up-fill"></i><a href="">Shantiniketan, PB Rd, Shantiniketan Layout,Bairidevarkoppa,  Hubballi, Karnataka
-                580025</a></li>
-                <li><i class="bi bi-telephone-fill"></i><a href="tel:+91 9606299909" >+91 9606299909</a></li>
-                  <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="tel:+91 9606299909">+91 9606299909</a></li>
-                  <li><i class="bi bi-envelope-fill"></i><a href="mailto:shaheenhubballi@gmail.com"> shaheenhubballi@gmail.com</a></li>
+            <ul class="info mt-3">
+              <li class="heghtline">
+                <span><i class="bi bi-send-arrow-up-fill"></i></span>
+                <span>Shantiniketan, PB Rd, Shantiniketan Layout,Bairidevarkoppa, Hubballi, Karnataka
+                  580025</span>
+              </li>
+              <li class="line-height">
+                <span><i class="bi bi-telephone-fill"></i></span>
+                <p><a href="tel:+91 9606299909">+91 9606299909</a><br>
+                  <a href="tel:+91 9606299909">+91 9606299909</a>
+                </p>
+              </li>
+              <li class="mail">
+                <span><i class="bi bi-envelope-fill "></i></span>
+                <p><a href="mailto:shaheenhubballi@gmail.com">shaheenhubballi@gmail.com</a></p>
+              </li>
             </ul>
-          </div>
           </div>
         </div>
       </div>
